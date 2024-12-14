@@ -1,10 +1,13 @@
 {
   "compilerOptions": {
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
+    "baseUrl": ".",
     "paths": {
-      "@common/*": ["../common/src/*"],
-      "@api/*": ["../api/src/*"]
+      "@core/*": ["src/core/*"],
+      "@uac/*": ["src/uac/*"],
+      "@uac-shared/*": ["src/uac-shared/*"],
+      "@core-shared/*": ["src/core-shared/*"],
+      "@styles/*": ["styles/*"],
+      "@config": ["src/config"]
     }
   },
   "files": [],

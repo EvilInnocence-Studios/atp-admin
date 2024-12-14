@@ -9,8 +9,12 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@common': path.resolve(__dirname, '../common/src'),
-      '@api': path.resolve(__dirname, '../api/src'),
+      '@core': path.resolve(__dirname, 'src/core'),
+      '@uac': path.resolve(__dirname, 'src/uac'),
+      '@uac-shared': path.resolve(__dirname, 'src/uac-shared'),
+      '@core-shared': path.resolve(__dirname, 'src/core-shared'),
+      '@styles': path.resolve(__dirname, 'styles'),
+      '@config': path.resolve(__dirname, 'src/config'),
     },
   },
   plugins: [react()],

@@ -1,0 +1,22 @@
+{
+    "core": {
+        "repo": "atp-core-ui",
+        "branch": "main"
+    },
+    "core-shared": {
+        "repo": "atp-core-shared",
+        "branch": "main"
+    },
+    "uac": {
+        "repo": "atp-uac-ui",
+        "branch": "main"
+    },
+    "uac-shared": {
+        "repo": "atp-uac-shared",
+        "branch": "main"
+    },
+    "admin": {
+        "repo": "atp-admin-core",
+        "branch": "main"
+    }
+}

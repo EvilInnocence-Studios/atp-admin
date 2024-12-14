@@ -1,8 +1,10 @@
+import { IApiConfig } from "@core/lib/types";
+import { uacMenus } from "@uac/lib/menus";
 
-export const config = {
+export const config:IApiConfig = {
     appName: "Admin",
     api: {
-        baseUrl: "http://192.168.254.54:3002/"
+        baseUrl: "http://localhost:3002/"
     },
     gallery: {
         maxRowCount: 9999,
@@ -10,4 +12,7 @@ export const config = {
     modules: [
         "uac",
     ],
+    menus: [
+        ...uacMenus.admin,
+    ]
 }
