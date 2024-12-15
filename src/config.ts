@@ -5,7 +5,7 @@ import { uacRoutes } from "@uac/lib/routes";
 export const config = ():IApiConfig => ({
     appName: "Admin",
     api: {
-        baseUrl: "http://localhost:3002/"
+        baseUrl: "http://192.168.254.141:3002/"
     },
     gallery: {
         maxRowCount: 9999,
