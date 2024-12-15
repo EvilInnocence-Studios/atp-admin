@@ -14,6 +14,10 @@ export const theme:ThemeConfig = {
             headerBg: globals.brandBgLight,
             headerPadding: "0",
             siderBg: globals.brandBgLight,                        
+        },
+        Card: {
+            headerBg: globals.brandBgLight,
+
         }
     }
 };
