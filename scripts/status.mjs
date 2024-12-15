@@ -18,7 +18,8 @@ const getRepoStatus = (repoPath) => {
     const unstagedChanges = statusOutput.split('\n').some(line => line.startsWith(' M') || line.startsWith('??'));
     const changesToPush = execSync('git log origin/main..HEAD', { cwd: repoPath }).toString().trim().length > 0;
     const currentBranch = execSync('git rev-parse --abbrev-ref HEAD', { cwd: repoPath }).toString().trim();
-    return { name, unstagedChanges, changesToPush, currentBranch };
+    const remoteUrl = execSync('git config --get remote.origin.url', { cwd: repoPath }).toString().trim();
+    return { name, unstagedChanges, changesToPush, currentBranch, remoteUrl };
 };
 
 const repoStatuses = repos.map(repo => getRepoStatus(path.join(srcDir, repo)));
@@ -29,12 +30,13 @@ const mainRepoStatus = {
 repoStatuses.unshift(mainRepoStatus);
 
 const data = [
-    ['Module', 'Branch', 'Unstaged Changes?', 'Changes to Push?'],
-    ...repoStatuses.map(({ name, unstagedChanges, changesToPush, currentBranch }) => [
+    ['Module', 'Branch', 'Unstaged Changes?', 'Changes to Push?', 'Remote URL'],
+    ...repoStatuses.map(({ name, unstagedChanges, changesToPush, currentBranch, remoteUrl }) => [
         unstagedChanges ? chalk.red(name) : changesToPush ? chalk.yellow(name) : name,
         currentBranch,
         unstagedChanges ? chalk.red('Yes') : 'No',
-        changesToPush ? chalk.yellow('Yes') : 'No'
+        changesToPush ? chalk.yellow('Yes') : 'No',
+        remoteUrl
     ])
 ];
 
