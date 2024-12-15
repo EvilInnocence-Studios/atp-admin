@@ -30,13 +30,13 @@ const mainRepoStatus = {
 repoStatuses.unshift(mainRepoStatus);
 
 const data = [
-    ['Module', 'Branch', 'Unstaged Changes?', 'Changes to Push?', 'Remote URL'],
+    ['Module', 'Branch', 'Committed?', 'Pushed?', 'Remote URL'],
     ...repoStatuses.map(({ name, unstagedChanges, changesToPush, currentBranch, remoteUrl }) => [
-        unstagedChanges ? chalk.red(name) : changesToPush ? chalk.yellow(name) : name,
-        currentBranch,
-        unstagedChanges ? chalk.red('Yes') : 'No',
-        changesToPush ? chalk.yellow('Yes') : 'No',
-        remoteUrl
+        unstagedChanges ? chalk.red(name) : changesToPush ? chalk.yellow(name) : chalk.green(name),
+        chalk.blue(currentBranch),
+        unstagedChanges ? chalk.red('    ✕') : chalk.green('    ✓'),
+        changesToPush ? chalk.yellow('   ✕') : chalk.green('   ✓'),
+        chalk.blue(remoteUrl)
     ])
 ];
 
