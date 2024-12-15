@@ -1,5 +1,6 @@
 import { IApiConfig } from "@core/lib/types";
 import { uacMenus } from "@uac/lib/menus";
+import { uacRoutes } from "@uac/lib/routes";
 
 export const config:IApiConfig = {
     appName: "Admin",
@@ -14,5 +15,8 @@ export const config:IApiConfig = {
     ],
     menus: [
         ...uacMenus.admin,
+    ],
+    routes: [
+        ...uacRoutes.admin,
     ]
 }
