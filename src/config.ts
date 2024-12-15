@@ -2,7 +2,7 @@ import { IApiConfig } from "@core/lib/types";
 import { uacMenus } from "@uac/lib/menus";
 import { uacRoutes } from "@uac/lib/routes";
 
-export const config:IApiConfig = {
+export const config = ():IApiConfig => ({
     appName: "Admin",
     api: {
         baseUrl: "http://localhost:3002/"
@@ -19,4 +19,4 @@ export const config:IApiConfig = {
     routes: [
         ...uacRoutes.admin,
     ]
-}
+});
