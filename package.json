@@ -8,9 +8,9 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "status": "node ./scripts/status.mjs",
+    "status": "node ./src/core-shared/scripts/status.mjs",
     "setup": "ts-node ./scripts/import.ts",
-    "install-custom": "node scripts/install-custom.js"
+    "install-custom": "node ./src/core-shared/scripts/install-custom.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
