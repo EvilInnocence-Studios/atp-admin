@@ -22,6 +22,11 @@ const getRepoStatus = (repoPath) => {
 };
 
 const repoStatuses = repos.map(repo => getRepoStatus(path.join(srcDir, repo)));
+const mainRepoStatus = {
+    ...getRepoStatus(path.resolve(srcDir, '..')),
+    name: "<root>",
+};
+repoStatuses.unshift(mainRepoStatus);
 
 const data = [
     ['Module', 'Branch', 'Unstaged Changes?', 'Changes to Push?'],
