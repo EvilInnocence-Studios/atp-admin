@@ -18,6 +18,9 @@ export const theme:ThemeConfig = {
         Card: {
             headerBg: globals.brandBgLight,
 
+        },
+        Input: {
+            activeShadow: `0 0 0 1px ${globals.brandSecondary}`,
         }
     }
 };
