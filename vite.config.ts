@@ -9,10 +9,13 @@ export default defineConfig({
   },
   resolve: {
     alias: {
+      '@admin': path.resolve(__dirname, 'src/admin'),
       '@core': path.resolve(__dirname, 'src/core'),
+      '@common': path.resolve(__dirname, 'src/common'),
       '@uac': path.resolve(__dirname, 'src/uac'),
       '@uac-shared': path.resolve(__dirname, 'src/uac-shared'),
       '@core-shared': path.resolve(__dirname, 'src/core-shared'),
+      '@common-shared': path.resolve(__dirname, 'src/common-shared'),
       '@styles': path.resolve(__dirname, 'styles'),
       '@config': path.resolve(__dirname, 'src/config'),
     },

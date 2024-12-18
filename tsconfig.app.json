@@ -23,10 +23,13 @@
     "noUncheckedSideEffectImports": true,
     "baseUrl": ".",
     "paths": {
+      "@admin/*": ["src/admin/*"],
       "@core/*": ["src/core/*"],
+      "@common/*": ["src/common/*"],
       "@uac/*": ["src/uac/*"],
       "@uac-shared/*": ["src/uac-shared/*"],
       "@core-shared/*": ["src/core-shared/*"],
+      "@common-shared/*": ["src/common-shared/*"],
       "@styles/*": ["styles/*"],
       "@config": ["src/config"]
     }
