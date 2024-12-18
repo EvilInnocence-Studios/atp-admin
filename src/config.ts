@@ -15,7 +15,7 @@ export const config = ():IApiConfig => ({
         maxRowCount: 9999,
     },
     modules: [
-        "uac",
+        "uac", "common", "admin"
     ],
     menus: [
         ...adminMenus.admin,
