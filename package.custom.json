@@ -7,6 +7,14 @@
         "repo": "atp-core-shared",
         "branch": "main"
     },
+    "common": {
+        "repo": "atp-common-ui",
+        "branch": "main"
+    },
+    "common-shared": {
+        "repo": "atp-common-shared",
+        "branch": "main"
+    },
     "uac": {
         "repo": "atp-uac-ui",
         "branch": "main"

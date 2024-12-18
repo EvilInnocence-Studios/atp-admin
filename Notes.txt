@@ -1,8 +1,16 @@
 To Do
 =====
 User manager
-Role manager
+    - user update broken
+    - password updater
+    - logout
+User Role manager
 
 Phase 2 Features
 ================
+User management
+    - AWS SES integration
+    - Welcome email
+    - Password reset email and form
+
 Read-only permissions
