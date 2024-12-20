@@ -16,6 +16,8 @@ export default defineConfig({
       '@uac-shared': path.resolve(__dirname, 'src/uac-shared'),
       '@core-shared': path.resolve(__dirname, 'src/core-shared'),
       '@common-shared': path.resolve(__dirname, 'src/common-shared'),
+      '@store': path.resolve(__dirname, 'src/store'),
+      '@store-shared': path.resolve(__dirname, 'src/store-shared'),
       '@styles': path.resolve(__dirname, 'styles'),
       '@config': path.resolve(__dirname, 'src/config'),
     },

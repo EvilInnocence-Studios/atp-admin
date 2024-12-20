@@ -1,10 +1,12 @@
+import { adminMenus } from "@admin/menux";
+import { adminRoutes } from "@admin/routes";
+import { commonRoutes } from "@common/lib/routes";
 import { IApiConfig } from "@core/lib/types";
 import { uacMenus } from "@uac/lib/menus";
 import { uacRoutes } from "@uac/lib/routes";
-import { commonMenus } from "./common/lib/menux";
-import { commonRoutes } from "@common/lib/routes";
-import { adminMenus } from "@admin/menux";
-import { adminRoutes } from "@admin/routes";
+import { commonMenus } from "./common/lib/menus";
+import { storeMenus } from "./store/lib/menus";
+import { storeRoutes } from "./store/lib/routes";
 
 export const config = ():IApiConfig => ({
     appName: "Admin",
@@ -21,10 +23,12 @@ export const config = ():IApiConfig => ({
         ...adminMenus.admin,
         ...commonMenus.admin,
         ...uacMenus.admin,
+        ...storeMenus.admin,
     ],
     routes: [
         ...adminRoutes.admin,
         ...uacRoutes.admin,
         ...commonRoutes.admin,
+        ...storeRoutes.admin,
     ]
 });

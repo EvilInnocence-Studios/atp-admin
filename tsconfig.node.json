@@ -28,6 +28,8 @@
       "@uac-shared/*": ["src/uac-shared/*"],
       "@core-shared/*": ["src/core-shared/*"],
       "@common-shared/*": ["src/common-shared/*"],
+      "@store/*": ["src/store/*"],
+      "@store-shared/*": ["src/store-shared/*"],
       "@styles/*": ["styles/*"],
       "@config": ["src/config"]
     }
