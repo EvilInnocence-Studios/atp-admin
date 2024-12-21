@@ -4,7 +4,18 @@ User manager
     - user update broken
     - password updater
     - logout
-User Role manager
+Product editor
+    - basic data
+    - media
+    - tags
+    - related products
+    - downloadable file(s)
+Customer manager
+Order manager
+Subscription manager
+Discounts and promotions
+CMS
+Sales reports
 
 Phase 2 Features
 ================
