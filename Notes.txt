@@ -5,7 +5,7 @@ User manager
     - password updater
     - logout
 Product editor
-    - basic data
+    - brokered info
     - media
     - tags
     - related products
