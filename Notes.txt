@@ -1,3 +1,7 @@
+Go-Live ToDo
+============
+Do final product data export and copy
+
 To Do
 =====
 User manager
@@ -7,6 +11,7 @@ User manager
 Product editor
     - brokered info
     - media
+        - thumb/main/delete buttons
     - tags
     - related products
     - downloadable file(s)
