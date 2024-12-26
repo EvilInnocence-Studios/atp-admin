@@ -5,13 +5,14 @@ import { IApiConfig } from "@core/lib/types";
 import { uacMenus } from "@uac/lib/menus";
 import { uacRoutes } from "@uac/lib/routes";
 import { commonMenus } from "./common/lib/menus";
+import { localConfig } from "./config.local";
 import { storeMenus } from "./store/lib/menus";
 import { storeRoutes } from "./store/lib/routes";
 
 export const config = ():IApiConfig => ({
     appName: "Admin",
     api: {
-        baseUrl: "http://192.168.254.141:3002/"
+        baseUrl: localConfig.api.baseUrl,
     },
     gallery: {
         maxRowCount: 9999,
