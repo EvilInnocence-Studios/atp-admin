@@ -1,6 +1,22 @@
-Go-Live ToDo
+Admin ToDo
 ============
-Do final product data export and copy
+Product
+    - Test media upload/delete
+    - Test downloadable file upload/delete
+    - Don't show downloadable files for grouped items
+    - Show grouped items manager (similar to related products)
+CMS
+    - CMS page list/editor
+    - Hero image manager
+Store
+    - Customer manager
+    - Order manager
+    - Reports
+UAC
+    - Implement user role manager
+    - Add admin permission (to block public user from admin)
+Misc
+    - Homepage dashboard
 
 To Do
 =====
