@@ -31,5 +31,14 @@ export const config = ():IApiConfig => ({
         ...uacRoutes.admin,
         ...commonRoutes.admin,
         ...storeRoutes.admin,
-    ]
+    ],
+    social: {
+        twitter: "",
+        blueSky: "",
+        instagram: "",
+    },
+    paypal: {
+        clientId: "",
+        plans: {},
+    }
 });
