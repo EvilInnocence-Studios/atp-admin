@@ -16,6 +16,10 @@ $padding: 16px;
 $padding-sm: 8px;
 $padding-xs: 4px;
 
+@mixin cmsPage {
+    
+}
+
 :export {
     brandPrimary: $brand-primary;
     brandSecondary: $brand-secondary;
