@@ -11,6 +11,11 @@ import { storeRoutes } from "./store/lib/routes";
 
 export const config = ():IApiConfig => ({
     appName: "Admin",
+    analytics: {
+        google: "",
+        track: "",
+        debug: true,
+    },
     api: {
         baseUrl: localConfig.api.baseUrl,
     },
