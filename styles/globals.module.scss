@@ -22,6 +22,10 @@ $cms-width: 1200px;
     
 }
 
+@mixin infoBlock {
+    
+}
+
 :export {
     brandPrimary: $brand-primary;
     brandSecondary: $brand-secondary;

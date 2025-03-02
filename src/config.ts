@@ -44,6 +44,6 @@ export const config = ():IApiConfig => ({
     },
     paypal: {
         clientId: "",
-        plans: {},
+        plans: [],
     }
 });
