@@ -38,6 +38,7 @@ export const config = ():IApiConfig => ({
         ...storeRoutes.admin,
     ],
     social: {
+        facebook: "",
         twitter: "",
         blueSky: "",
         instagram: "",
