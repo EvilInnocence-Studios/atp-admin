@@ -8,19 +8,11 @@ import { commonMenus } from "./common/lib/menus";
 import { localConfig } from "./config.local";
 import { storeMenus } from "./store/lib/menus";
 import { storeRoutes } from "./store/lib/routes";
+import { commonSettings } from "@common/lib/settings";
 
 export const config = ():IApiConfig => ({
-    appName: "Admin",
-    analytics: {
-        google: "",
-        track: "",
-        debug: true,
-    },
     api: {
         baseUrl: localConfig.api.baseUrl,
-    },
-    gallery: {
-        maxRowCount: 9999,
     },
     modules: [
         "uac", "common", "admin"
@@ -37,14 +29,10 @@ export const config = ():IApiConfig => ({
         ...commonRoutes.admin,
         ...storeRoutes.admin,
     ],
-    social: {
-        facebook: "",
-        twitter: "",
-        blueSky: "",
-        instagram: "",
+    settings: {
+        ...commonSettings,
     },
     paypal: {
-        clientId: "",
         plans: [],
     }
 });
