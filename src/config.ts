@@ -17,4 +17,4 @@ const modules = [
     storeModule,
 ];
 
-export const config = makeConfig(localConfig.api.baseUrl, modules);
+export const config = makeConfig(localConfig.api.baseUrl, modules, "admin");
