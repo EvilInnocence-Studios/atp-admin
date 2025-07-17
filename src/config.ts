@@ -7,9 +7,11 @@ import { module as commonModule } from "@common/index";
 import { module as storeModule } from "@store/index";
 import { module as subscriptionsModule } from "@subscription/index";
 import { module as uacModule } from "@uac/index";
+import { module as coreModule } from "@core/index";
 
 // List the modules you want active here
 const modules = [
+    coreModule,
     adminModule,
     commonModule,
     uacModule,
