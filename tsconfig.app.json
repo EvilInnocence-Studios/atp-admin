@@ -33,6 +33,7 @@
       "@store/*": ["src/store/*"],
       "@store-shared/*": ["src/store-shared/*"],
       "@subscription/*": ["src/subscription/*"],
+      "@subscription-products-plugin/*": ["src/subscription-products-plugin/*"],
       "@subscription-shared/*": ["src/subscription-shared/*"],
       "@styles/*": ["styles/*"],
       "@config": ["src/config"]

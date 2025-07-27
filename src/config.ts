@@ -4,10 +4,11 @@ import { localConfig } from "./config.local";
 // Import the modules you want active here
 import { module as adminModule } from "@admin/index";
 import { module as commonModule } from "@common/index";
+import { module as coreModule } from "@core/index";
 import { module as storeModule } from "@store/index";
+import { module as subscriptionsProductsPluginModule } from "@subscription-products-plugin/index";
 import { module as subscriptionsModule } from "@subscription/index";
 import { module as uacModule } from "@uac/index";
-import { module as coreModule } from "@core/index";
 
 // List the modules you want active here
 const modules = [
@@ -16,6 +17,7 @@ const modules = [
     commonModule,
     uacModule,
     subscriptionsModule,
+    subscriptionsProductsPluginModule,
     storeModule,
 ];
 
