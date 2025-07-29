@@ -85,6 +85,9 @@
       ],
       "@styles": [
         "styles/*"
+      ],
+      "@brokered-products-plugin/*": [
+        "src/brokered-products-plugin/*"
       ]
     }
   },
