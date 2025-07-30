@@ -9,7 +9,7 @@ import { module as storeModule } from "@store/index";
 import { module as subscriptionsProductsPluginModule } from "@subscription-products-plugin/index";
 import { module as subscriptionsModule } from "@subscription/index";
 import { module as uacModule } from "@uac/index";
-
+import { module as brokeredProductsPluginModule } from "@brokered-products-plugin/index";
 // List the modules you want active here
 const modules = [
     coreModule,
@@ -18,6 +18,7 @@ const modules = [
     uacModule,
     subscriptionsModule,
     subscriptionsProductsPluginModule,
+    brokeredProductsPluginModule,
     storeModule,
 ];
 
