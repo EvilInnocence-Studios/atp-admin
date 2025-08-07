@@ -88,6 +88,12 @@
       ],
       "@brokered-products-plugin/*": [
         "src/brokered-products-plugin/*"
+      ],
+      "@brokered-products-plugin-shared": [
+        "src/brokered-products-plugin-shared"
+      ],
+      "@brokered-products-plugin-shared/*": [
+        "src/brokered-products-plugin-shared/*"
       ]
     }
   },
