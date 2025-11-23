@@ -1,17 +1,17 @@
 {
-    "admin":                           { "repo": "atp-admin-core",                      "branch": "main" },
-    "core":                            { "repo": "atp-core-ui",                         "branch": "main" },
-    "core-shared":                     { "repo": "atp-core-shared",                     "branch": "main" },
+    "admin":                           { "repo": "atp-admin-core",                      "branch": "tags/0.1.0" },
+    "core":                            { "repo": "atp-core-ui",                         "branch": "tags/0.1.0" },
+    "core-shared":                     { "repo": "atp-core-shared",                     "branch": "tags/0.1.0" },
 
-    "brokered-products-plugin":        { "repo": "atp-brokered-products-plugin-ui",     "branch": "main" },
-    "brokered-products-plugin-shared": { "repo": "atp-brokered-products-plugin-shared", "branch": "main" },
-    "common":                          { "repo": "atp-common-ui",                       "branch": "main" },
-    "common-shared":                   { "repo": "atp-common-shared",                   "branch": "main" },
-    "uac":                             { "repo": "atp-uac-ui",                          "branch": "main" },
-    "uac-shared":                      { "repo": "atp-uac-shared",                      "branch": "main" },
-    "store":                           { "repo": "atp-store-ui",                        "branch": "main" },
-    "store-shared":                    { "repo": "atp-store-shared",                    "branch": "main" },
-    "subscription":                    { "repo": "atp-subscription-ui",                 "branch": "main" },
-    "subscription-shared":             { "repo": "atp-subscription-shared",             "branch": "main" },
-    "subscription-products-plugin":    { "repo": "atp-subscription-products-plugin-ui", "branch": "main" }
+    "brokered-products-plugin":        { "repo": "atp-brokered-products-plugin-ui",     "branch": "tags/0.1.0" },
+    "brokered-products-plugin-shared": { "repo": "atp-brokered-products-plugin-shared", "branch": "tags/0.1.0" },
+    "common":                          { "repo": "atp-common-ui",                       "branch": "tags/0.1.0" },
+    "common-shared":                   { "repo": "atp-common-shared",                   "branch": "tags/0.1.0" },
+    "uac":                             { "repo": "atp-uac-ui",                          "branch": "tags/0.1.0" },
+    "uac-shared":                      { "repo": "atp-uac-shared",                      "branch": "tags/0.1.0" },
+    "store":                           { "repo": "atp-store-ui",                        "branch": "tags/0.1.0" },
+    "store-shared":                    { "repo": "atp-store-shared",                    "branch": "tags/0.1.0" },
+    "subscription":                    { "repo": "atp-subscription-ui",                 "branch": "tags/0.1.0" },
+    "subscription-shared":             { "repo": "atp-subscription-shared",             "branch": "tags/0.1.0" },
+    "subscription-products-plugin":    { "repo": "atp-subscription-products-plugin-ui", "branch": "tags/0.1.0" }
 }
