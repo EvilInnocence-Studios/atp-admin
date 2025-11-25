@@ -25,3 +25,5 @@ dist-ssr
 
 src/**/*
 src/config.local.ts
+src/services.ts
+src/config.ts
