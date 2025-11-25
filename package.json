@@ -14,6 +14,8 @@
     "status": "node ./src/core-shared/scripts/status.mjs",
     "setup": "ts-node ./scripts/import.ts",
     "install-custom": "node ./scripts/install-custom.js && yarn update-aliases && node ./scripts/generate-config.js && node ./scripts/generate-services.js",
+    "generate-config": "node ./scripts/generate-config.js",
+    "generate-services": "node ./scripts/generate-services.js",
     "update-aliases": "node ./scripts/update-aliases.js"
   },
   "dependencies": {

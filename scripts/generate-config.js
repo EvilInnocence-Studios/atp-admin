@@ -21,7 +21,15 @@ const toCamelCase = (str) => {
 const imports = modules.map(module => `import { module as ${toCamelCase(module)} } from "./${module}";`).join('\n');
 const exports = `export const modules = [\n    ${modules.map(module => toCamelCase(module)).join(',\n    ')}\n];`;
 
-const content = `${imports}\n\n${exports}\n`;
+const content = `import { makeConfig } from "@core/lib/makeConfig";
+import {localConfig} from "./config.local";
+
+${imports}
+
+${exports}
+
+export const config = makeConfig(localConfig.api.baseUrl, modules, "admin");
+`;
 
 fs.writeFileSync(outputFile, content);
 console.log(`Generated ${outputFile}`);
