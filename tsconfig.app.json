@@ -115,6 +115,18 @@
       ],
       "@brokered-products-plugin-shared/*": [
         "src/brokered-products-plugin-shared/*"
+      ],
+      "@comic": [
+        "src/comic"
+      ],
+      "@comic/*": [
+        "src/comic/*"
+      ],
+      "@comic-shared": [
+        "src/comic-shared"
+      ],
+      "@comic-shared/*": [
+        "src/comic-shared/*"
       ]
     }
   },

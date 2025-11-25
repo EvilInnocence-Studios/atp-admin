@@ -1,25 +1,21 @@
-import { makeConfig } from "@core/lib/makeConfig";
-import { localConfig } from "./config.local";
+import { module as admin } from "./admin";
+import { module as brokeredProductsPlugin } from "./brokered-products-plugin";
+import { module as comic } from "./comic";
+import { module as common } from "./common";
+import { module as core } from "./core";
+import { module as store } from "./store";
+import { module as subscription } from "./subscription";
+import { module as subscriptionProductsPlugin } from "./subscription-products-plugin";
+import { module as uac } from "./uac";
 
-// Import the modules you want active here
-import { module as adminModule } from "@admin/index";
-import { module as commonModule } from "@common/index";
-import { module as coreModule } from "@core/index";
-import { module as storeModule } from "@store/index";
-import { module as subscriptionsProductsPluginModule } from "@subscription-products-plugin/index";
-import { module as subscriptionsModule } from "@subscription/index";
-import { module as uacModule } from "@uac/index";
-import { module as brokeredProductsPluginModule } from "@brokered-products-plugin/index";
-// List the modules you want active here
-const modules = [
-    coreModule,
-    adminModule,
-    commonModule,
-    uacModule,
-    subscriptionsModule,
-    subscriptionsProductsPluginModule,
-    brokeredProductsPluginModule,
-    storeModule,
+export const modules = [
+    admin,
+    brokeredProductsPlugin,
+    comic,
+    common,
+    core,
+    store,
+    subscription,
+    subscriptionProductsPlugin,
+    uac
 ];
-
-export const config = makeConfig(localConfig.api.baseUrl, modules, "admin");
